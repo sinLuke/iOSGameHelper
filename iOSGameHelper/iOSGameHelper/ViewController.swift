@@ -18,7 +18,7 @@ class ViewController: NSViewController {
     var isStart = false {
         didSet {
             (Application.shared as? Application)?.isStart = isStart
-            startButton.title = isStart ? "按（⎋）键退出" : "开始监听键盘"
+            startButton.title = isStart ? NSLocalizedString("quit", comment: "quit") : NSLocalizedString("listen", comment: "listen")
             setLabel()
             view.window?.backgroundColor = isStart ? NSColor.systemRed : NSColor.windowBackgroundColor
             addSingle.isHidden = isStart
@@ -55,13 +55,13 @@ class ViewController: NSViewController {
     }
     
     func setLabel() {
-        infoLabel.stringValue = isStart ? "正在监听键盘……" : "共有\((Application.shared as? Application)?.controllingWindows.count ?? 0)个映射"
+        infoLabel.stringValue = isStart ? NSLocalizedString("listening", comment: "listening") : ""
     }
     
     @IBAction func start(_ sender: Any) {
         if !isStart, (Application.shared as? Application)?.controllingWindows.isEmpty == true {
             let alert = NSAlert()
-            alert.messageText = "请添加键盘映射"
+            alert.messageText = NSLocalizedString("addMap", comment: "addMap")
             alert.runModal()
             return
         }

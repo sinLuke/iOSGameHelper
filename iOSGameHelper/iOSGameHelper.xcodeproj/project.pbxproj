@@ -17,6 +17,7 @@
 		A308FCAF2568920500814565 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308FCAE2568920500814565 /* Application.swift */; };
 		A33113FD2568B599004C7297 /* NSJoystickTouchWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33113FB2568B599004C7297 /* NSJoystickTouchWindow.swift */; };
 		A33113FE2568B599004C7297 /* NSJoystickTouchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33113FC2568B599004C7297 /* NSJoystickTouchWindow.xib */; };
+		A3FDE3BB2568CA53000D4D14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3FDE3BD2568CA53000D4D14 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,10 @@
 		A308FCAE2568920500814565 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		A33113FB2568B599004C7297 /* NSJoystickTouchWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSJoystickTouchWindow.swift; sourceTree = "<group>"; };
 		A33113FC2568B599004C7297 /* NSJoystickTouchWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSJoystickTouchWindow.xib; sourceTree = "<group>"; };
+		A3FDE3BC2568CA53000D4D14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A3FDE3BF2568CACF000D4D14 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A3FDE3C22568CBF5000D4D14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		A3FDE3C42568CBF5000D4D14 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,7 @@
 				A308FCAE2568920500814565 /* Application.swift */,
 				A33113FB2568B599004C7297 /* NSJoystickTouchWindow.swift */,
 				A33113FC2568B599004C7297 /* NSJoystickTouchWindow.xib */,
+				A3FDE3BD2568CA53000D4D14 /* Localizable.strings */,
 			);
 			path = iOSGameHelper;
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 061603E125686EDB008D9E79;
 			productRefGroup = 061603EB25686EDB008D9E79 /* Products */;
@@ -140,6 +147,7 @@
 			files = (
 				061603F225686EDD008D9E79 /* Assets.xcassets in Resources */,
 				A308FCAC25687CB400814565 /* NSSingleTouchWindow.xib in Resources */,
+				A3FDE3BB2568CA53000D4D14 /* Localizable.strings in Resources */,
 				A33113FE2568B599004C7297 /* NSJoystickTouchWindow.xib in Resources */,
 				061603F525686EDD008D9E79 /* Main.storyboard in Resources */,
 			);
@@ -168,8 +176,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				061603F425686EDD008D9E79 /* Base */,
+				A3FDE3C22568CBF5000D4D14 /* en */,
+				A3FDE3C42568CBF5000D4D14 /* zh-Hans */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3FDE3BD2568CA53000D4D14 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FDE3BC2568CA53000D4D14 /* en */,
+				A3FDE3BF2568CACF000D4D14 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -179,6 +198,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -240,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

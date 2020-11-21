@@ -1,0 +1,15 @@
+/* 
+  Localization.strings
+  iOSGameHelper
+
+  Created by Luke on 2020-11-21.
+  
+*/
+
+"setting" = "设置按键……";
+"setkey" = "设置按键";
+"unknown" = "未知";
+"quit" = "按（⎋）键退出";
+"listen" = "开始监听键盘";
+"listening" = "正在监听键盘……";
+"addMap" = "请添加键盘映射";

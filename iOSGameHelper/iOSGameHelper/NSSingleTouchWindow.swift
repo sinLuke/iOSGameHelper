@@ -27,17 +27,17 @@ class NSSingleTouchWindow: NSWindowController, TouchWindow {
         didSet {
             keyCodebutton.isEnabled = !isListening
             if isListening {
-                keyCodebutton.title = "设置按键……"
+                keyCodebutton.title = NSLocalizedString("setting", comment: "")
                 (Application.shared as? Application)?.currentTouchWinidow = self
                 return
             }
             guard let keyCode = self.keyCode else {
-                keyCodebutton.title = "设置按键"
+                keyCodebutton.title = NSLocalizedString("setkey", comment: "")
                 return
             }
             
             guard let keyCodeString = keyMap[keyCode] else {
-                keyCodebutton.title = "未知"
+                keyCodebutton.title = NSLocalizedString("unknown", comment: "")
                 return
             }
             

@@ -80,12 +80,12 @@ class NSJoystickTouchWindow: NSWindowController, TouchWindow {
         didSet {
             leftButton.isEnabled = !leftIsListening
             if leftIsListening {
-                leftButton.title = "设置按键……"
+                leftButton.title = NSLocalizedString("setting", comment: "")
                 (Application.shared as? Application)?.currentTouchWinidow = self
                 return
             }
             guard let keyCode = self.leftKeyCode else {
-                leftButton.title = "设置按键"
+                leftButton.title = NSLocalizedString("setkey", comment: "")
                 return
             }
             
@@ -102,17 +102,17 @@ class NSJoystickTouchWindow: NSWindowController, TouchWindow {
         didSet {
             rightButton.isEnabled = !rightIsListening
             if rightIsListening {
-                rightButton.title = "设置按键……"
+                rightButton.title = NSLocalizedString("setting", comment: "")
                 (Application.shared as? Application)?.currentTouchWinidow = self
                 return
             }
             guard let keyCode = self.rightKeyCode else {
-                rightButton.title = "设置按键"
+                rightButton.title = NSLocalizedString("setkey", comment: "")
                 return
             }
             
             guard let keyCodeString = keyMap[keyCode] else {
-                rightButton.title = "未知"
+                rightButton.title = NSLocalizedString("unknown", comment: "")
                 return
             }
             
@@ -124,17 +124,17 @@ class NSJoystickTouchWindow: NSWindowController, TouchWindow {
         didSet {
             topButton.isEnabled = !topIsListening
             if topIsListening {
-                topButton.title = "设置按键……"
+                topButton.title = NSLocalizedString("setting", comment: "")
                 (Application.shared as? Application)?.currentTouchWinidow = self
                 return
             }
             guard let keyCode = self.topKeyCode else {
-                topButton.title = "设置按键"
+                topButton.title = NSLocalizedString("setkey", comment: "")
                 return
             }
             
             guard let keyCodeString = keyMap[keyCode] else {
-                topButton.title = "未知"
+                topButton.title = NSLocalizedString("unknown", comment: "")
                 return
             }
             
@@ -146,17 +146,17 @@ class NSJoystickTouchWindow: NSWindowController, TouchWindow {
         didSet {
             bottomButton.isEnabled = !bottomIsListening
             if bottomIsListening {
-                bottomButton.title = "设置按键……"
+                bottomButton.title = NSLocalizedString("setting", comment: "")
                 (Application.shared as? Application)?.currentTouchWinidow = self
                 return
             }
             guard let keyCode = self.bottomKeyCode else {
-                bottomButton.title = "设置按键"
+                bottomButton.title = NSLocalizedString("setkey", comment: "")
                 return
             }
             
             guard let keyCodeString = keyMap[keyCode] else {
-                bottomButton.title = "未知"
+                bottomButton.title = NSLocalizedString("unknown", comment: "")
                 return
             }
             

@@ -1,0 +1,15 @@
+/* 
+  Localization.strings
+  iOSGameHelper
+
+  Created by Luke on 2020-11-21.
+  
+*/
+
+"setting" = "Setting ...";
+"setkey" = "Set Key";
+"unknown" = "Unknwin";
+"quit" = "Press Esc（⎋）to Stop";
+"listen" = "Start";
+"listening" = "Listening Keyboard……";
+"addMap" = "Please add a key map";
