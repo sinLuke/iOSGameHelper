@@ -11,6 +11,12 @@
 		061603F025686EDB008D9E79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061603EF25686EDB008D9E79 /* ViewController.swift */; };
 		061603F225686EDD008D9E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061603F125686EDD008D9E79 /* Assets.xcassets */; };
 		061603F525686EDD008D9E79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061603F325686EDD008D9E79 /* Main.storyboard */; };
+		A308FCA2256872C800814565 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308FCA1256872C800814565 /* MainWindowController.swift */; };
+		A308FCAB25687CB400814565 /* NSSingleTouchWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308FCA925687CB400814565 /* NSSingleTouchWindow.swift */; };
+		A308FCAC25687CB400814565 /* NSSingleTouchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A308FCAA25687CB400814565 /* NSSingleTouchWindow.xib */; };
+		A308FCAF2568920500814565 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308FCAE2568920500814565 /* Application.swift */; };
+		A33113FD2568B599004C7297 /* NSJoystickTouchWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33113FB2568B599004C7297 /* NSJoystickTouchWindow.swift */; };
+		A33113FE2568B599004C7297 /* NSJoystickTouchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33113FC2568B599004C7297 /* NSJoystickTouchWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		061603F425686EDD008D9E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		061603F625686EDD008D9E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		061603F725686EDD008D9E79 /* iOSGameHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSGameHelper.entitlements; sourceTree = "<group>"; };
+		A308FCA1256872C800814565 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		A308FCA925687CB400814565 /* NSSingleTouchWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSingleTouchWindow.swift; sourceTree = "<group>"; };
+		A308FCAA25687CB400814565 /* NSSingleTouchWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSSingleTouchWindow.xib; sourceTree = "<group>"; };
+		A308FCAE2568920500814565 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		A33113FB2568B599004C7297 /* NSJoystickTouchWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSJoystickTouchWindow.swift; sourceTree = "<group>"; };
+		A33113FC2568B599004C7297 /* NSJoystickTouchWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSJoystickTouchWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,12 @@
 				061603F325686EDD008D9E79 /* Main.storyboard */,
 				061603F625686EDD008D9E79 /* Info.plist */,
 				061603F725686EDD008D9E79 /* iOSGameHelper.entitlements */,
+				A308FCA1256872C800814565 /* MainWindowController.swift */,
+				A308FCA925687CB400814565 /* NSSingleTouchWindow.swift */,
+				A308FCAA25687CB400814565 /* NSSingleTouchWindow.xib */,
+				A308FCAE2568920500814565 /* Application.swift */,
+				A33113FB2568B599004C7297 /* NSJoystickTouchWindow.swift */,
+				A33113FC2568B599004C7297 /* NSJoystickTouchWindow.xib */,
 			);
 			path = iOSGameHelper;
 			sourceTree = "<group>";
@@ -121,6 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				061603F225686EDD008D9E79 /* Assets.xcassets in Resources */,
+				A308FCAC25687CB400814565 /* NSSingleTouchWindow.xib in Resources */,
+				A33113FE2568B599004C7297 /* NSJoystickTouchWindow.xib in Resources */,
 				061603F525686EDD008D9E79 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33113FD2568B599004C7297 /* NSJoystickTouchWindow.swift in Sources */,
+				A308FCAF2568920500814565 /* Application.swift in Sources */,
 				061603F025686EDB008D9E79 /* ViewController.swift in Sources */,
+				A308FCA2256872C800814565 /* MainWindowController.swift in Sources */,
+				A308FCAB25687CB400814565 /* NSSingleTouchWindow.swift in Sources */,
 				061603EE25686EDB008D9E79 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

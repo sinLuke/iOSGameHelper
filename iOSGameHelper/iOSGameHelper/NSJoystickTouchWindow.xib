@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSJoystickTouchWindow" customModule="iOSGameHelper" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomButton" destination="FnH-Mk-SVm" id="DVW-bY-Ej7"/>
+                <outlet property="bottomImage" destination="u2E-wY-az1" id="Tdk-8d-0jI"/>
+                <outlet property="leftButton" destination="BHg-Px-yHL" id="kMC-a3-VzY"/>
+                <outlet property="leftImage" destination="DAC-aB-Knl" id="lXM-RK-eVW"/>
+                <outlet property="rightButton" destination="pJT-PS-nRp" id="cYi-gZ-i0G"/>
+                <outlet property="rightImage" destination="29r-xo-fzH" id="Lpx-MX-YYe"/>
+                <outlet property="topButton" destination="Ua9-AS-9Tb" id="Lv7-DE-gmq"/>
+                <outlet property="topImage" destination="LBL-FU-2oJ" id="zmO-bI-NkO"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="256" height="256"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <value key="minSize" type="size" width="256" height="256"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u2E-wY-az1">
+                        <rect key="frame" x="98" y="20" width="61" height="88"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vHQ-NM-tas">
+                                <rect key="frame" x="6" y="40" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="IJz-Wf-0Qz"/>
+                                    <constraint firstAttribute="height" constant="48" id="mk5-kd-TuN"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="circle" id="Emg-4m-PiZ"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FnH-Mk-SVm">
+                                <rect key="frame" x="-7" y="-7" width="75" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lCZ-FP-3h9">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="bottom:" target="-2" id="9Zr-lb-TtA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                    <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LBL-FU-2oJ">
+                        <rect key="frame" x="98" y="148" width="61" height="88"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wiI-3H-WMb">
+                                <rect key="frame" x="6" y="40" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="69g-Zp-AQO"/>
+                                    <constraint firstAttribute="height" constant="48" id="QB4-t1-w9e"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="circle" id="PHH-MG-SS0"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ua9-AS-9Tb">
+                                <rect key="frame" x="-7" y="-7" width="75" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8Wb-Cf-aFh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="top:" target="-2" id="s9G-ES-7fD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                    <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="29r-xo-fzH">
+                        <rect key="frame" x="175" y="84" width="61" height="88"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nPA-v8-X2H">
+                                <rect key="frame" x="7" y="40" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="SF8-EI-hga"/>
+                                    <constraint firstAttribute="height" constant="48" id="mmG-cd-iAo"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="circle" id="gvO-k8-KhH"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pJT-PS-nRp">
+                                <rect key="frame" x="-7" y="-7" width="75" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="brp-LA-MhY">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="right:" target="-2" id="6Ie-rF-upq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                    <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-aB-Knl">
+                        <rect key="frame" x="20" y="84" width="61" height="88"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yoo-AE-L1f">
+                                <rect key="frame" x="7" y="40" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="OKb-7Y-Bkq"/>
+                                    <constraint firstAttribute="height" constant="48" id="vlC-jX-Top"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="circle" id="ScX-ud-Zmz"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BHg-Px-yHL">
+                                <rect key="frame" x="-7" y="-7" width="75" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mlY-Ud-5GU">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="left:" target="-2" id="sMc-t7-30a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="29r-xo-fzH" secondAttribute="trailing" constant="20" symbolic="YES" id="A88-v8-a9h"/>
+                    <constraint firstAttribute="bottom" secondItem="u2E-wY-az1" secondAttribute="bottom" constant="20" symbolic="YES" id="FF3-7O-oZg"/>
+                    <constraint firstItem="DAC-aB-Knl" firstAttribute="centerY" secondItem="se5-gp-TjO" secondAttribute="centerY" id="FSV-kU-VOg"/>
+                    <constraint firstItem="DAC-aB-Knl" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="M2w-xf-7gw"/>
+                    <constraint firstItem="LBL-FU-2oJ" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="VGF-mF-XOM"/>
+                    <constraint firstItem="LBL-FU-2oJ" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="gNd-dA-m0m"/>
+                    <constraint firstItem="u2E-wY-az1" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="ifx-2C-SAw"/>
+                    <constraint firstItem="29r-xo-fzH" firstAttribute="centerY" secondItem="se5-gp-TjO" secondAttribute="centerY" id="xYq-pu-fwD"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-53.5" y="143.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="circle" width="100" height="100"/>
+    </resources>
+</document>
